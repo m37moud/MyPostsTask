@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.fragment.navArgs
 import com.example.mypoststask.databinding.FragmentSecondBinding
 import com.example.mypoststask.viewmodel.PostsViewModel
 import kotlinx.coroutines.launch
@@ -17,9 +18,9 @@ import kotlinx.coroutines.launch
  */
 class SecondFragment : Fragment() {
     val viewModel : PostsViewModel by viewModels()
-//    private val args by navArgs<SecondFragmentArgs>()
-//val resultBundle = Bundle()
-//    resultBundle.putParcelable("postBundle", args.result)
+    private val args by navArgs<SecondFragmentArgs>()
+val resultBundle = Bundle()
+    resultBundle.putParcelable("postBundle", args.result)
 
     private var _binding: FragmentSecondBinding? = null
 
