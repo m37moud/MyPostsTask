@@ -17,9 +17,9 @@ import kotlinx.coroutines.launch
  * A simple [Fragment] subclass as the second destination in the navigation.
  */
 class SecondFragment : Fragment() {
-    val viewModel : PostsViewModel by viewModels()
-    private val args by navArgs<SecondFragmentArgs>()
-val resultBundle = Bundle()
+    val viewModel: PostsViewModel by viewModels()
+//    private val args by navArgs<SecondFragmentArgs>()
+    val resultBundle = Bundle()
     resultBundle.putParcelable("postBundle", args.result)
 
     private var _binding: FragmentSecondBinding? = null
@@ -34,12 +34,12 @@ val resultBundle = Bundle()
     ): View? {
 
         _binding = FragmentSecondBinding.inflate(inflater, container, false)
-        viewModel.getSinglePosts(resultBundleId)
+//        viewModel.getSinglePosts(resultBundleId)
         lifecycleScope.launch {
             val post = viewModel.singlePost
 
-        _binding.titlePostTv.text = post.value?.title
-        _binding.title_desc_tv.text = post.value?.title
+//            _binding.titlePostTv.text = post.value?.title
+//            _binding.title_desc_tv.text = post.value?.title
         }
 
         return binding.root

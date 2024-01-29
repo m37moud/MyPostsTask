@@ -8,12 +8,12 @@ plugins {
 
 android {
     namespace = "com.example.mypoststask"
-    compileSdk = 34
+    compileSdk = 33
 
     defaultConfig {
         applicationId = "com.example.mypoststask"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 33
         versionCode = 1
         versionName = "1.0"
 

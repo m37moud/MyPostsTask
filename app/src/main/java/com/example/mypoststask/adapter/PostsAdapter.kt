@@ -30,7 +30,7 @@ class PostsAdapter : ListAdapter<PostsResultItem, PostsAdapter.ViewHolder>(Posts
             itemBinding.postDesc.text = post.body
 
             itemBinding.layout.setOnClickListener {
-                findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
+//                findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
             }
 
         }
