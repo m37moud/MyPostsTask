@@ -19,8 +19,8 @@ import kotlinx.coroutines.launch
 class SecondFragment : Fragment() {
     val viewModel: PostsViewModel by viewModels()
 //    private val args by navArgs<SecondFragmentArgs>()
-    val resultBundle = Bundle()
-    resultBundle.putParcelable("postBundle", args.result)
+//    val resultBundle = Bundle()
+//    resultBundle.putParcelable("postBundle", args.result)
 
     private var _binding: FragmentSecondBinding? = null
 
