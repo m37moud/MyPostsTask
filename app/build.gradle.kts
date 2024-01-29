@@ -3,7 +3,7 @@ plugins {
     id("org.jetbrains.kotlin.android")
     id ("kotlin-kapt")
     id ("dagger.hilt.android.plugin")
-    id ("kotlin-android-extensions")
+//    id ("kotlin-android-extensions")
 }
 
 android {
@@ -72,6 +72,11 @@ dependencies {
 
     implementation ("com.github.bumptech.glide:glide:4.13.0")
     annotationProcessor ("com.github.bumptech.glide:compiler:4.13.0")
+
+
+    // Navigation Component
+    implementation ("androidx.navigation:navigation-fragment-ktx:2.3.1")
+    implementation ("androidx.navigation:navigation-ui-ktx:2.3.1")
 
     implementation(project(":domain"))
     implementation(project(":data"))
